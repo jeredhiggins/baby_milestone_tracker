@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baby's Cosmic Milestones</title>
+  <link rel="stylesheet" href="baby.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="constellation" id="constellation"></div>
+  
+  <h1>🌌 Baby's Stellar Journey 🌠<br><small>Cosmic Milestones Tracker</small></h1>
+  
+  <div class="progress-dashboard pulse">
+    <div class="progress-header">
+      <h2>Cosmic Progress</h2>
+      <div class="progress-stats">
+        <span id="completed-count">0</span>/<span id="total-count">0</span> milestones
+      </div>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="overall-progress" style="width: 0%"></div>
+    </div>
+    <div class="domain-progress" id="domain-progress"></div>
+  </div>
+  
+  <div class="controls">
+    <button class="control-btn" id="expand-all">
+      <i class="fas fa-chevron-down"></i> Expand All
+    </button>
+    <button class="control-btn" id="collapse-all">
+      <i class="fas fa-chevron-up"></i> Collapse All
+    </button>
+    <button class="control-btn" id="save-progress">
+      <i class="fas fa-cloud-upload-alt"></i> Save Progress
+    </button>
+    <button class="control-btn" id="load-progress">
+      <i class="fas fa-cloud-download-alt"></i> Load Progress
+    </button>
+  </div>
+  
+  <div id="milestones-container"></div>
+  
+  <div id="milestone-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 class="modal-title" id="modal-title"></h2>
+      <div class="modal-section">
+        <div class="modal-section-title">Celestial Timing</div>
+        <div id="modal-age"></div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Constellation</div>
+        <div id="modal-domain"></div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Stardust Description</div>
+        <div id="modal-description"></div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Guiding Stars (Tips)</div>
+        <div id="modal-tips"></div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Cosmic Range</div>
+        <div id="modal-range"></div>
+      </div>
+      <button class="complete-btn" id="complete-btn">
+        Mark as Reached
+      </button>
+      <div class="modal-section">
+        <div class="modal-section-title">Celestial Source</div>
+        <div id="modal-source"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="glyph-modal" class="glyph-modal">
+    <div class="glyph-modal-content">
+      <span class="glyph-modal-close">&times;</span>
+      <div class="glyph-modal-header">
+        <img id="glyph-modal-icon" class="glyph-modal-icon">
+        <h2 class="glyph-modal-title" id="glyph-modal-title">
+          <span id="glyph-modal-domain"></span>
+          <small id="glyph-modal-mayan"></small>
+        </h2>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Symbolism</div>
+        <p id="glyph-modal-symbolism"></p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Cultural Significance</div>
+        <p id="glyph-modal-culture"></p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Developmental Connection</div>
+        <p id="glyph-modal-development"></p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="celebration" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2000; display: none;"></div>
+  
+  <script>
+    const milestonesContainer = document.getElementById("milestones-container");
+    const expandAllBtn = document.getElementById("expand-all");
+    const collapseAllBtn = document.getElementById("collapse-all");
+    const saveProgressBtn = document.getElementById("save-progress");
+    const loadProgressBtn = document.getElementById("load-progress");
+    const completedCount = document.getElementById("completed-count");
+    const totalCount = document.getElementById("total-count");
+    const overallProgress = document.getElementById("overall-progress");
+    const domainProgress = document.getElementById("domain-progress");
+    const celebration = document.getElementById("celebration");
+
+    let milestonesData = [];
+    let currentMilestoneId = null;
+    let completedMilestones = [];
+    const domainGlyphs = {
+      'Gross Motor': 'jaguar-balam-new.png',
+      'Fine Motor': 'turtle-ahk-new.png',
+      'Language': 'macaw-mo-new.png',
+      'Cognitive': 'eagle-kutz-new.png',
+      'Social-Emotional': 'deer-manik-new.png',
+      'Adaptive': 'black-road-xibalba-new.png',
+      'Sensory': 'kukulkan-new.png'
+    };
+
+    const glyphExplanations = {
+      'Gross Motor': {
+        mayanName: "Jaguar (Balam)",
+        symbolism: "The jaguar represents strength, agility, and physical power in Mayan culture.",
+        culture: "In Mayan mythology, the jaguar was considered the ruler of the underworld.",
+        development: "Just as a jaguar cub develops its hunting skills, babies develop gross motor skills."
+      },
+      'Fine Motor': {
+        mayanName: "Turtle (Ek')",
+        symbolism: "The turtle glyph represents precision and delicate movements.",
+        culture: "Turtles were seen as wise creatures in Mayan culture.",
+        development: "Like a turtle carefully manipulating objects with its claws."
+      },
+      'Language': {
+        mayanName: "Macaw (Mo')",
+        symbolism: "The colorful macaw represents communication and vocalization.",
+        culture: "Macaws were sacred to the Maya as messengers.",
+        development: "Just as a young macaw learns to vocalize."
+      },
+      'Cognitive': {
+        mayanName: "Eagle (K'uk')",
+        symbolism: "The eagle represents vision and higher thinking.",
+        culture: "The eagle was associated with the sun god.",
+        development: "Like an eaglet learning to interpret the world."
+      },
+      'Social-Emotional': {
+        mayanName: "Deer (Manik')",
+        symbolism: "The deer represents emotional awareness.",
+        culture: "Deer were associated with the Mayan moon goddess.",
+        development: "Like a fawn learning to interact with its herd."
+      },
+      'Adaptive': {
+        mayanName: "Black Road (Xibalba)",
+        symbolism: "The black road represents life's journey.",
+        culture: "The black road led to Xibalba (the underworld).",
+        development: "Just as travelers adapt to their path."
+      },
+      'Sensory': {
+        mayanName: "Feathered Serpent (Kukulkan)",
+        symbolism: "Represents sensory integration.",
+        culture: "Kukulkan was a major deity.",
+        development: "Like the serpent sensing its environment."
+      }
+    };
+
+    const PROGRESS_FILE_NAME = 'baby_milestones_progress.json';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      createConstellation();
+      loadMilestones();
+      setupControls();
+      loadInitialProgress();
+    });
+
+    function loadInitialProgress() {
+      const savedProgress = localStorage.getItem('completedMilestones');
+      if (savedProgress) {
+        try {
+          completedMilestones = JSON.parse(savedProgress);
+          updateProgressDashboard();
+          updateMilestoneCards();
+        } catch (e) {
+          console.error("Error loading initial progress:", e);
+        }
+      }
+    }
+
+    function saveProgressToFile() {
+      const progressData = JSON.stringify(completedMilestones);
+      localStorage.setItem('completedMilestones', progressData);
+      
+      const blob = new Blob([progressData], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = PROGRESS_FILE_NAME;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      
+      showTemporaryMessage('Progress saved!', 'success');
+    }
+
+    function loadProgressFromFile() {
+      const input = document.createElement('input');
+      input.type = 'file';
+      input.accept = '.json';
+      
+      input.onchange = e => {
+        const file = e.target.files[0];
+        if (!file) return;
+        
+        const reader = new FileReader();
+        reader.onload = event => {
+          try {
+            const data = JSON.parse(event.target.result);
+            if (Array.isArray(data)) {
+              completedMilestones = data;
+              localStorage.setItem('completedMilestones', JSON.stringify(data));
+              updateProgressDashboard();
+              updateMilestoneCards();
+              showTemporaryMessage('Progress loaded!', 'success');
+            }
+          } catch (e) {
+            console.error('Error parsing progress file:', e);
+            showTemporaryMessage('Invalid progress file', 'error');
+          }
+        };
+        reader.readAsText(file);
+      };
+      input.click();
+    }
+
+    function createConstellation() {
+      const container = document.getElementById('constellation');
+      const starsCount = 200;
+      
+      container.innerHTML = '';
+      
+      for (let i = 0; i < starsCount; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.width = `${Math.random() * 3 + 1}px`;
+        star.style.height = star.style.width;
+        star.style.animationDelay = `${Math.random() * 4}s`;
+        star.style.animationDuration = `${2 + Math.random() * 3}s`;
+        
+        if (i % 15 === 0) {
+          star.classList.add('shooting-star');
+          star.style.animation = `shoot ${3 + Math.random() * 2}s linear ${star.style.animationDelay} infinite`;
+          star.style.width = '60px';
+          star.style.height = '2px';
+          star.style.opacity = '0';
+        }
+        
+        container.appendChild(star);
+      }
+    }
+
+    function loadMilestones() {
+      fetch("milestones.json")
+        .then(response => response.json())
+        .then(data => {
+          milestonesData = data.milestones;
+          totalCount.textContent = milestonesData.length;
+          groupAndDisplayMilestones();
+          setupGlyphInteractions();
+        })
+        .catch(err => console.error("Error loading milestones:", err));
+    }
+
+    function groupAndDisplayMilestones() {
+      const grouped = groupByDomain(milestonesData);
+      milestonesContainer.innerHTML = '';
+      
+      Object.entries(grouped).forEach(([domain, milestones]) => {
+        const domainEl = createDomainAccordion(domain, milestones);
+        milestonesContainer.appendChild(domainEl);
+      });
+      
+      setTimeout(() => {
+        document.querySelectorAll('.domain-accordion').forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.add('fade-in');
+          }, index * 100);
+        });
+      }, 100);
+    }
+
+    function groupByDomain(milestones) {
+      return milestones.reduce((acc, milestone) => {
+        const domain = milestone.domain.split(' (')[0];
+        if (!acc[domain]) acc[domain] = [];
+        acc[domain].push(milestone);
+        return acc;
+      }, {});
+    }
+
+    function createDomainAccordion(domain, milestones) {
+      const domainEl = document.createElement('div');
+      domainEl.className = 'domain-accordion';
+      
+      milestones.sort((a, b) => parseFloat(a.range.average) - parseFloat(b.range.average));
+      
+      const header = document.createElement('div');
+      header.className = 'domain-header';
+      header.innerHTML = `
+        <img src="${domainGlyphs[domain]}" alt="${domain}" class="domain-glyph">
+        <div class="domain-title">${domain}</div>
+        <div class="domain-toggle"><i class="fas fa-plus"></i></div>
+      `;
+      
+      const content = document.createElement('div');
+      content.className = 'domain-content';
+      
+      milestones.forEach(milestone => {
+        content.appendChild(createMilestoneCard(milestone));
+      });
+      
+      header.addEventListener('click', (e) => {
+        if (e.target.classList.contains('domain-glyph')) return;
+        
+        content.classList.toggle('expanded');
+        const toggleIcon = header.querySelector('.domain-toggle i');
+        toggleIcon.classList.toggle('fa-plus');
+        toggleIcon.classList.toggle('fa-minus');
+      });
+      
+      domainEl.appendChild(header);
+      domainEl.appendChild(content);
+      return domainEl;
+    }
+
+    function createMilestoneCard(milestone) {
+      const card = document.createElement('div');
+      card.className = `milestone-card ${isCompleted(milestone.id) ? 'completed' : ''}`;
+      card.dataset.id = milestone.id;
+      
+      const domain = milestone.domain.split(' (')[0];
+      const mayanName = milestone.domain.match(/\(([^)]+)\)/)[1];
+
+      card.innerHTML = `
+        <div class="milestone-card-header">
+          <div class="milestone-title">
+            <img src="${domainGlyphs[domain]}" alt="${domain}" class="milestone-glyph">
+            ${milestone.title}
+          </div>
+          ${isCompleted(milestone.id) ? '<div class="moon-badge">🌙</div>' : ''}
+        </div>
+        <div class="milestone-age">${milestone.age}</div>
+        <div class="milestone-domain">${domain} <small>${mayanName}</small></div>
+        <div class="milestone-description">${milestone.description}</div>
+      `;
+      
+      card.addEventListener('click', (e) => {
+        if (!e.target.classList.contains('control-btn')) {
+          openMilestoneModal(milestone.id);
+        }
+      });
+      
+      return card;
+    }
+
+    function setupGlyphInteractions() {
+      document.querySelectorAll('.domain-glyph, .milestone-glyph, .domain-progress-item img').forEach(glyph => {
+        glyph.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const domain = this.closest('.domain-header') 
+            ? this.closest('.domain-header').querySelector('.domain-title').textContent 
+            : this.closest('.milestone-card') 
+              ? this.closest('.milestone-card').querySelector('.milestone-domain').textContent.split(' ')[0]
+              : this.closest('.domain-progress-item').querySelector('span').textContent.trim();
+          
+          showGlyphGuide(domain);
+        });
+      });
+    }
+
+    function showGlyphGuide(domain) {
+      const guide = glyphExplanations[domain];
+      if (!guide) return;
+      
+      document.getElementById('glyph-modal-icon').src = domainGlyphs[domain];
+      document.getElementById('glyph-modal-domain').textContent = domain;
+      document.getElementById('glyph-modal-mayan').textContent = guide.mayanName;
+      document.getElementById('glyph-modal-symbolism').textContent = guide.symbolism;
+      document.getElementById('glyph-modal-culture').textContent = guide.culture;
+      document.getElementById('glyph-modal-development').textContent = guide.development;
+      
+      const modal = document.getElementById('glyph-modal');
+      modal.style.display = 'flex';
+      setTimeout(() => modal.classList.add('show'), 10);
+    }
+
+    function closeGlyphModal() {
+      const modal = document.getElementById('glyph-modal');
+      modal.classList.remove('show');
+      setTimeout(() => modal.style.display = 'none', 300);
+    }
+
+    function isCompleted(id) {
+      return completedMilestones.includes(id);
+    }
+
+    function updateProgressDashboard() {
+      const completed = completedMilestones.length;
+      const total = milestonesData.length;
+      const percentage = total > 0 ? Math.round((completed / total) * 100) : 0;
+      
+      completedCount.textContent = completed;
+      overallProgress.style.width = `${percentage}%`;
+      
+      domainProgress.innerHTML = '';
+      const domains = groupByDomain(milestonesData);
+      
+      Object.entries(domains).forEach(([domain, milestones]) => {
+        const domainCompleted = milestones.filter(m => isCompleted(m.id)).length;
+        const domainPercentage = Math.round((domainCompleted / milestones.length) * 100);
+        
+        const item = document.createElement('div');
+        item.className = 'domain-progress-item';
+        item.innerHTML = `
+          <img src="${domainGlyphs[domain]}" alt="${domain}">
+          <span style="flex: 1; margin: 0 12px;">${domain}</span>
+          <span style="min-width: 60px; text-align: right;">${domainCompleted}/${milestones.length}</span>
+          <div style="width: 100px; margin-left: 12px;" class="progress-bar-container">
+            <div class="progress-bar" style="width: ${domainPercentage}%"></div>
+          </div>
+        `;
+        domainProgress.appendChild(item);
+      });
+      
+      document.querySelector('.progress-dashboard').classList.add('pulse');
+      setTimeout(() => {
+        document.querySelector('.progress-dashboard').classList.remove('pulse');
+      }, 1000);
+      
+      setupGlyphInteractions();
+    }
+
+    function setupControls() {
+      expandAllBtn.addEventListener('click', () => {
+        document.querySelectorAll('.domain-content').forEach(content => {
+          content.classList.add('expanded');
+          const header = content.previousElementSibling;
+          const toggleIcon = header.querySelector('.domain-toggle i');
+          toggleIcon.classList.remove('fa-plus');
+          toggleIcon.classList.add('fa-minus');
+        });
+      });
+      
+      collapseAllBtn.addEventListener('click', () => {
+        document.querySelectorAll('.domain-content').forEach(content => {
+          content.classList.remove('expanded');
+          const header = content.previousElementSibling;
+          const toggleIcon = header.querySelector('.domain-toggle i');
+          toggleIcon.classList.remove('fa-minus');
+          toggleIcon.classList.add('fa-plus');
+        });
+      });
+      
+      saveProgressBtn.addEventListener('click', saveProgressToFile);
+      loadProgressBtn.addEventListener('click', loadProgressFromFile);
+      
+      document.querySelector('.glyph-modal-close').addEventListener('click', closeGlyphModal);
+    }
+
+    function updateMilestoneCards() {
+      document.querySelectorAll('.milestone-card').forEach(card => {
+        const id = card.dataset.id;
+        if (isCompleted(id)) {
+          card.classList.add('completed');
+          if (!card.querySelector('.moon-badge')) {
+            const moonBadge = document.createElement('div');
+            moonBadge.className = 'moon-badge';
+            moonBadge.textContent = '🌙';
+            card.querySelector('.milestone-card-header').appendChild(moonBadge);
+          }
+        } else {
+          card.classList.remove('completed');
+          const badge = card.querySelector('.moon-badge');
+          if (badge) badge.remove();
+        }
+      });
+    }
+
+    function showTemporaryMessage(message, type) {
+      const messageEl = document.createElement('div');
+      messageEl.className = `temp-message ${type}`;
+      messageEl.textContent = message;
+      document.body.appendChild(messageEl);
+      
+      setTimeout(() => {
+        messageEl.classList.add('fade-out');
+        setTimeout(() => messageEl.remove(), 500);
+      }, 3000);
+    }
+
+    function openMilestoneModal(id) {
+      currentMilestoneId = id;
+      const milestone = milestonesData.find(m => m.id === id);
+      if (!milestone) return;
+      
+      document.getElementById('modal-title').textContent = milestone.title;
+      document.getElementById('modal-age').textContent = milestone.age;
+      
+      const domainParts = milestone.domain.split(' / ');
+      const domainDisplay = domainParts.length > 1 ? 
+        `${domainParts[0]} (${domainParts[1]})` : milestone.domain;
+      document.getElementById('modal-domain').textContent = domainDisplay;
+      
+      document.getElementById('modal-description').textContent = milestone.description;
+      document.getElementById('modal-tips').textContent = milestone.tips;
+      document.getElementById('modal-source').textContent = milestone.source;
+      
+      const rangeText = `Early stars: ${milestone.range.early} month${milestone.range.early !== "0.5" ? "s" : ""}
+                       \nCommon alignment: ${milestone.range.average} month${milestone.range.average !== "1" ? "s" : ""}
+                       \nLate bloomers: ${milestone.range.late} month${milestone.range.late !== "1" ? "s" : ""}`;
+      document.getElementById('modal-range').textContent = rangeText;
+      
+      const completeBtn = document.getElementById('complete-btn');
+      if (isCompleted(milestone.id)) {
+        completeBtn.innerHTML = 'Milestone Reached!';
+        completeBtn.classList.add('completed-btn');
+      } else {
+        completeBtn.innerHTML = 'Mark as Reached';
+        completeBtn.classList.remove('completed-btn');
+      }
+      
+      const modal = document.getElementById('milestone-modal');
+      modal.style.display = 'flex';
+      setTimeout(() => modal.classList.add('show'), 10);
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('milestone-modal');
+      modal.classList.remove('show');
+      setTimeout(() => modal.style.display = 'none', 300);
+    }
+
+    function toggleMilestoneCompletion() {
+      if (!currentMilestoneId) return;
+      
+      const index = completedMilestones.indexOf(currentMilestoneId);
+      const card = document.querySelector(`[data-id="${currentMilestoneId}"]`);
+      const completeBtn = document.getElementById('complete-btn');
+      
+      if (index === -1) {
+        completedMilestones.push(currentMilestoneId);
+        card.classList.add('completed');
+        
+        const moonBadge = document.createElement('div');
+        moonBadge.className = 'moon-badge';
+        moonBadge.textContent = '🌙';
+        card.querySelector('.milestone-card-header').appendChild(moonBadge);
+        
+        completeBtn.innerHTML = 'Milestone Reached!';
+        completeBtn.classList.add('completed-btn');
+        
+        showCelebration();
+      } else {
+        completedMilestones.splice(index, 1);
+        card.classList.remove('completed');
+        card.querySelector('.moon-badge')?.remove();
+        
+        completeBtn.innerHTML = 'Mark as Reached';
+        completeBtn.classList.remove('completed-btn');
+      }
+      
+      // Only save to localStorage, not to file
+      localStorage.setItem('completedMilestones', JSON.stringify(completedMilestones));
+      updateProgressDashboard();
+    }
+
+    function showCelebration() {
+      celebration.style.display = 'block';
+      celebration.innerHTML = '';
+      
+      for (let i = 0; i < 50; i++) {
+        const star = document.createElement('div');
+        star.className = 'celebration-star';
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.animationDelay = `${Math.random() * 0.5}s`;
+        star.innerHTML = ['✨', '🌟', '⭐', '🌠', '💫'][Math.floor(Math.random() * 5)];
+        celebration.appendChild(star);
+      }
+      
+      setTimeout(() => {
+        celebration.style.display = 'none';
+      }, 2000);
+    }
+
+    document.querySelector('.close-modal').addEventListener('click', closeModal);
+    document.getElementById('complete-btn').addEventListener('click', toggleMilestoneCompletion);
+    
+    window.addEventListener('click', function(event) {
+      if (event.target === document.getElementById('milestone-modal')) {
+        closeModal();
+      }
+      if (event.target === document.getElementById('glyph-modal')) {
+        closeGlyphModal();
+      }
+    });
+    
+    window.addEventListener('resize', () => {
+      createConstellation();
+    });
+  </script>
+</body>
+</html>

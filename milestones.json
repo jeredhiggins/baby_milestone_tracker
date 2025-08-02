@@ -1,0 +1,1460 @@
+{
+  "milestones": [
+    {
+      "id": "gm_001",
+      "title": "Lifts head during tummy time",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "0–2 months",
+      "description": "Baby briefly lifts their head while lying on their stomach.",
+      "tips": "Offer short sessions of tummy time multiple times a day starting at birth.",
+      "range": {
+        "average": "1 month",
+        "early": "0.5 month",
+        "late": "2.5 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "gm_002",
+      "title": "Pushes up on arms when on tummy",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "2–4 months",
+      "description": "Baby pushes up onto their forearms while on their belly.",
+      "tips": "Continue daily tummy time to help your baby strengthen neck and arm muscles.",
+      "range": {
+        "average": "3 months",
+        "early": "2 months",
+        "late": "4 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "gm_003",
+      "title": "Rolls from tummy to back",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "3–6 months",
+      "description": "Baby learns to roll from their stomach to their back.",
+      "tips": "Encourage rolling by gently guiding baby’s legs and cheering when they try.",
+      "range": {
+        "average": "5 months",
+        "early": "3 months",
+        "late": "6 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "gm_004",
+      "title": "Rolls from back to tummy",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "5–7 months",
+      "description": "Baby rolls from their back onto their tummy.",
+      "tips": "Place toys to the side of baby to motivate rolling over during play.",
+      "range": {
+        "average": "6 months",
+        "early": "5 months",
+        "late": "8 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "gm_005",
+      "title": "Sits without support",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "5–8 months",
+      "description": "Baby can sit up steadily without needing support.",
+      "tips": "Sit on the floor with baby between your legs to practice sitting up safely.",
+      "range": {
+        "average": "6 months",
+        "early": "5 months",
+        "late": "9 months"
+      },
+      "source": "WHO"
+    },
+    {
+      "id": "gm_006",
+      "title": "Stands with support",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "6–10 months",
+      "description": "Baby can support their weight on their legs when held or supported.",
+      "tips": "Let baby bounce on your lap or stand while holding onto furniture (under supervision).",
+      "range": {
+        "average": "8 months",
+        "early": "5 months",
+        "late": "11 months"
+      },
+      "source": "WHO"
+    },
+    {
+      "id": "gm_007",
+      "title": "Crawls on hands and knees",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "7–10 months",
+      "description": "Baby moves forward on hands and knees (crawling).",
+      "tips": "Create a safe, open play area with toys placed just out of reach to encourage crawling.",
+      "range": {
+        "average": "9 months",
+        "early": "7 months",
+        "late": "12 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "gm_008",
+      "title": "Pulls to stand",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "8–12 months",
+      "description": "Baby pulls themselves up to stand while holding onto furniture or your hands.",
+      "tips": "Place sturdy furniture or activity tables within baby’s reach to encourage pulling up.",
+      "range": {
+        "average": "9 months",
+        "early": "8 months",
+        "late": "12 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "gm_009",
+      "title": "Cruises along furniture",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "9–12 months",
+      "description": "Baby walks sideways while holding onto furniture for support.",
+      "tips": "Encourage cruising by arranging furniture so baby can step between pieces safely.",
+      "range": {
+        "average": "11 months",
+        "early": "9 months",
+        "late": "13 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "gm_010",
+      "title": "Stands alone briefly",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "11–14 months",
+      "description": "Baby can stand without support for a few seconds.",
+      "tips": "Offer plenty of floor time and let baby practice standing barefoot on a safe surface.",
+      "range": {
+        "average": "12 months",
+        "early": "10 months",
+        "late": "14 months"
+      },
+      "source": "WHO"
+    },
+    {
+      "id": "gm_011",
+      "title": "Takes first independent steps",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "12–15 months",
+      "description": "Baby takes their first steps without help, beginning to walk independently.",
+      "tips": "Stand or kneel a few steps away and encourage baby to walk into your arms.",
+      "range": {
+        "average": "12 months",
+        "early": "9 months",
+        "late": "17 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "gm_012",
+      "title": "Walks independently",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "13–18 months",
+      "description": "Toddler walks on their own with a steady gait, seldom falling.",
+      "tips": "Provide a safe, open environment for walking and soft shoes or bare feet for better grip.",
+      "range": {
+        "average": "14 months",
+        "early": "12 months",
+        "late": "18 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "gm_013",
+      "title": "Runs short distance",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "18–24 months",
+      "description": "Child begins to run with coordination (faster than a walk, but may still fall occasionally).",
+      "tips": "Play chase or outdoor games to help your toddler practice running in a safe area.",
+      "range": {
+        "average": "20 months",
+        "early": "16 months",
+        "late": "24 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "gm_014",
+      "title": "Kicks a ball",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "20–24 months",
+      "description": "Child can kick a light ball forward by swinging their foot.",
+      "tips": "Use a soft ball and demonstrate kicking; cheer when your child tries to kick the ball.",
+      "range": {
+        "average": "22 months",
+        "early": "20 months",
+        "late": "26 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "gm_015",
+      "title": "Jumps with both feet off ground",
+      "domain": "Gross Motor (Jaguar / Balam)",
+      "age": "24–30 months",
+      "description": "Child can jump up, briefly getting both feet off the ground.",
+      "tips": "Hold your child’s hands and practice jumping together, or use a low step to jump off.",
+      "range": {
+        "average": "27 months",
+        "early": "24 months",
+        "late": "36 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "fm_016",
+      "title": "Holds a toy briefly",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "2–4 months",
+      "description": "Baby briefly grasps a rattle or toy when placed in hand.",
+      "tips": "Place soft toys in baby's hand and gently encourage grasping.",
+      "range": {
+        "average": "3 months",
+        "early": "2 months",
+        "late": "4 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "fm_017",
+      "title": "Reaches for dangling objects",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "3–5 months",
+      "description": "Baby reaches out to grab or bat at toys or objects above them.",
+      "tips": "Hang a colorful toy within reach during playtime to motivate your baby to reach and swipe.",
+      "range": {
+        "average": "4 months",
+        "early": "3 months",
+        "late": "6 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "fm_018",
+      "title": "Transfers toy from hand to hand",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "5–7 months",
+      "description": "Baby moves an object from one hand to the other while playing.",
+      "tips": "Offer toys and let baby pass them between hands to develop coordination.",
+      "range": {
+        "average": "6 months",
+        "early": "5 months",
+        "late": "8 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "fm_019",
+      "title": "Uses raking grasp",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "6–8 months",
+      "description": "Baby uses all fingers to rake small objects toward themselves.",
+      "tips": "Provide safe finger foods (like puffs) on a tray for baby to practice picking them up.",
+      "range": {
+        "average": "7 months",
+        "early": "6 months",
+        "late": "9 months"
+      },
+      "source": "Mayo Clinic"
+    },
+    {
+      "id": "fm_020",
+      "title": "Picks up small objects with pincer grasp",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "9–12 months",
+      "description": "Baby uses thumb and index finger to pick up tiny items like cereal pieces.",
+      "tips": "Place small soft finger foods on baby's high-chair tray to encourage pincer grasp.",
+      "range": {
+        "average": "10 months",
+        "early": "8 months",
+        "late": "12 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "fm_021",
+      "title": "Bangs objects together",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "9–12 months",
+      "description": "Baby bangs two toys or objects together to hear the sound.",
+      "tips": "Give your baby two blocks or lids and show them how to tap them together.",
+      "range": {
+        "average": "11 months",
+        "early": "9 months",
+        "late": "13 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "fm_022",
+      "title": "Puts objects into a container",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "10–13 months",
+      "description": "Baby can release items into a container or bucket.",
+      "tips": "Use a soft container and demonstrate dropping blocks in and dumping them out for your baby.",
+      "range": {
+        "average": "12 months",
+        "early": "10 months",
+        "late": "15 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "fm_023",
+      "title": "Claps hands",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "9–12 months",
+      "description": "Baby brings both hands together to clap.",
+      "tips": "Play clapping games like “Pat-a-cake” to help your baby practice clapping.",
+      "range": {
+        "average": "10 months",
+        "early": "9 months",
+        "late": "12 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "fm_024",
+      "title": "Scribbles on paper",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "15–18 months",
+      "description": "Toddler makes marks on paper by scribbling with crayon or pencil.",
+      "tips": "Provide large crayons or markers and paper, and encourage your child’s early drawing without worrying about the mess.",
+      "range": {
+        "average": "16 months",
+        "early": "14 months",
+        "late": "20 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "fm_025",
+      "title": "Stacks two blocks",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "14–18 months",
+      "description": "Toddler balances two blocks on top of each other.",
+      "tips": "Offer a variety of blocks and cheer when your toddler successfully stacks them, even if the tower is small.",
+      "range": {
+        "average": "16 months",
+        "early": "14 months",
+        "late": "20 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "fm_026",
+      "title": "Turns pages of a book",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "24–30 months",
+      "description": "Child can turn pages in a board book, often turning multiple pages at once.",
+      "tips": "Read board books together and let your child help turn the pages at their own pace.",
+      "range": {
+        "average": "28 months",
+        "early": "24 months",
+        "late": "36 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "fm_027",
+      "title": "Stacks five or more blocks",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "24–30 months",
+      "description": "Child builds a tower of five or more blocks independently.",
+      "tips": "Challenge your child to build a taller block tower and celebrate their success, even if it topples.",
+      "range": {
+        "average": "27 months",
+        "early": "24 months",
+        "late": "30 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "fm_028",
+      "title": "Uses child-safe scissors to snip paper",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "36–48 months",
+      "description": "Child begins to use scissors to make small cuts in paper (with supervision).",
+      "tips": "Provide child-safe scissors and paper for your child to practice cutting simple lines or snips (always with supervision).",
+      "range": {
+        "average": "42 months",
+        "early": "36 months",
+        "late": "48 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "fm_029",
+      "title": "Copies a circle or line",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "30–36 months",
+      "description": "Child can imitate drawing a simple line or circle when shown.",
+      "tips": "Draw simple shapes and encourage your child to copy them with a thick crayon.",
+      "range": {
+        "average": "33 months",
+        "early": "30 months",
+        "late": "40 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "fm_030",
+      "title": "Draws a person with 2+ body parts",
+      "domain": "Fine Motor (Turtle Shell / Ek')",
+      "age": "48–60 months",
+      "description": "Child draws a person with at least two body parts (such as a head and one other feature).",
+      "tips": "Encourage drawing by asking your child to draw your family; don't worry about accuracy—praise their effort.",
+      "range": {
+        "average": "54 months",
+        "early": "48 months",
+        "late": "60 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "lc_031",
+      "title": "Coos and makes vowel sounds",
+      "domain": "Language (Macaw / Mo')",
+      "age": "2–4 months",
+      "description": "Baby begins to make cooing sounds and simple vowel noises.",
+      "tips": "Respond to your baby's sounds with conversation and smiles.",
+      "range": {
+        "average": "3 months",
+        "early": "2 months",
+        "late": "5 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "lc_032",
+      "title": "Laughs out loud",
+      "domain": "Language (Macaw / Mo')",
+      "age": "4–6 months",
+      "description": "Baby laughs or giggles in response to playful interaction.",
+      "tips": "Play gentle tickling games or make funny faces to encourage your baby to laugh.",
+      "range": {
+        "average": "5 months",
+        "early": "4 months",
+        "late": "7 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "lc_033",
+      "title": "Babbles with consonant sounds",
+      "domain": "Language (Macaw / Mo')",
+      "age": "5–7 months",
+      "description": "Baby makes repeated consonant-vowel sounds like “bababa” or “dadada.”",
+      "tips": "Babble back to your baby and use simple sounds; show excitement when they try new sounds.",
+      "range": {
+        "average": "6 months",
+        "early": "5 months",
+        "late": "8 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "lc_034",
+      "title": "Responds to own name",
+      "domain": "Language (Macaw / Mo')",
+      "age": "6–9 months",
+      "description": "Baby turns to look when you say their name.",
+      "tips": "Use your baby's name often in songs and conversation to help them recognize it.",
+      "range": {
+        "average": "7 months",
+        "early": "6 months",
+        "late": "10 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "lc_035",
+      "title": "Says “mama” or “dada” (nonspecific)",
+      "domain": "Language (Macaw / Mo')",
+      "age": "7–10 months",
+      "description": "Baby says “mama” or “dada” sounds, but not necessarily to the correct parent yet.",
+      "tips": "Encourage babbling by talking with baby and labeling yourself as “mama” or “dada” in third person.",
+      "range": {
+        "average": "9 months",
+        "early": "7 months",
+        "late": "11 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "lc_036",
+      "title": "Waves goodbye or uses simple gestures",
+      "domain": "Language (Macaw / Mo')",
+      "age": "9–12 months",
+      "description": "Baby uses gestures like waving or shaking head “no” to communicate.",
+      "tips": "Model simple gestures (waving, nodding) and use them consistently with words (like “bye-bye”) so baby learns both.",
+      "range": {
+        "average": "10 months",
+        "early": "9 months",
+        "late": "12 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "lc_037",
+      "title": "Says one word besides “mama”/“dada”",
+      "domain": "Language (Macaw / Mo')",
+      "age": "10–14 months",
+      "description": "Baby says at least one meaningful word other than names (for example, “hi” or “ball”).",
+      "tips": "Name familiar people and objects frequently; celebrate when your baby tries to say a new word, even if it's not clear.",
+      "range": {
+        "average": "12 months",
+        "early": "10 months",
+        "late": "15 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "lc_038",
+      "title": "Points to show what they want",
+      "domain": "Language (Macaw / Mo')",
+      "age": "12–15 months",
+      "description": "Baby points at objects or people to draw attention or express a want.",
+      "tips": "When your baby points, label the object (“You see the cat!”) to reinforce that communication.",
+      "range": {
+        "average": "13 months",
+        "early": "12 months",
+        "late": "16 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "lc_039",
+      "title": "Uses 5–10 words",
+      "domain": "Language (Macaw / Mo')",
+      "age": "15–18 months",
+      "description": "Toddler says around five to ten words regularly, though pronunciation may not be perfect.",
+      "tips": "Keep talking with your toddler, and repeat words back correctly; read books to introduce new simple words.",
+      "range": {
+        "average": "16 months",
+        "early": "15 months",
+        "late": "20 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "lc_040",
+      "title": "Identifies body parts when asked",
+      "domain": "Language (Macaw / Mo')",
+      "age": "18–24 months",
+      "description": "Toddler can point to a couple of body parts (like nose, tummy) when you name them.",
+      "tips": "Make a game of naming body parts during dressing or bath time (\"Where is your nose?\").",
+      "range": {
+        "average": "21 months",
+        "early": "18 months",
+        "late": "24 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "lc_041",
+      "title": "Combines two words",
+      "domain": "Language (Macaw / Mo')",
+      "age": "18–24 months",
+      "description": "Toddler starts using two-word phrases like “more milk” or “Daddy go.”",
+      "tips": "When your child uses one word, expand it (if they say “ball,” you say “big ball”); encourage them to repeat the phrase.",
+      "range": {
+        "average": "21 months",
+        "early": "18 months",
+        "late": "26 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "lc_042",
+      "title": "Half of speech understood by caregiver",
+      "domain": "Language (Macaw / Mo')",
+      "age": "24–30 months",
+      "description": "About half of your toddler’s speech is understandable to familiar listeners.",
+      "tips": "Listen patiently and encourage your child to talk; avoid correcting pronunciation harshly—model the correct words gently.",
+      "range": {
+        "average": "24 months",
+        "early": "20 months",
+        "late": "30 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "lc_043",
+      "title": "Uses 2–3 word sentences",
+      "domain": "Language (Macaw / Mo')",
+      "age": "24–30 months",
+      "description": "Toddler speaks in short phrases or sentences of two to three words (e.g., “Mommy go home”).",
+      "tips": "Have simple back-and-forth conversations; ask questions that prompt short answers to practice new phrases.",
+      "range": {
+        "average": "27 months",
+        "early": "24 months",
+        "late": "30 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "lc_044",
+      "title": "Knows 50 or more words",
+      "domain": "Language (Macaw / Mo')",
+      "age": "24–30 months",
+      "description": "Toddler’s vocabulary expands to at least 50 words by around two years of age.",
+      "tips": "Keep reading and talking together. Introduce new words during daily activities, pointing out and naming new things.",
+      "range": {
+        "average": "28 months",
+        "early": "24 months",
+        "late": "34 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "lc_045",
+      "title": "Tells simple story or idea (4+ word sentences)",
+      "domain": "Language (Macaw / Mo')",
+      "age": "36–48 months",
+      "description": "Child speaks in longer sentences (four or more words) and can tell you about something that happened or a make-believe story.",
+      "tips": "Ask your child about their day or to imagine a story; listen patiently and ask questions to encourage them to continue talking.",
+      "range": {
+        "average": "42 months",
+        "early": "36 months",
+        "late": "48 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "cg_046",
+      "title": "Recognizes familiar people",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "3–5 months",
+      "description": "Baby shows recognition of familiar faces and may react differently to strangers.",
+      "tips": "Maintain consistent routines and introduce new faces gradually.",
+      "range": {
+        "average": "4 months",
+        "early": "3 months",
+        "late": "6 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "cg_047",
+      "title": "Searches for partially hidden object",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "6–8 months",
+      "description": "Baby looks for an object that is partially hidden (e.g., peeks under a blanket for a toy).",
+      "tips": "Play partial hide-and-seek games with toys, like covering a toy halfway and encouraging baby to find it.",
+      "range": {
+        "average": "7 months",
+        "early": "6 months",
+        "late": "9 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "cg_048",
+      "title": "Searches for fully hidden object",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "8–10 months",
+      "description": "Baby finds a toy completely hidden under a cup or blanket, demonstrating object permanence.",
+      "tips": "Play peek-a-boo or hide toys under cloths for your baby to uncover, building their understanding that objects still exist when unseen.",
+      "range": {
+        "average": "9 months",
+        "early": "8 months",
+        "late": "11 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "cg_049",
+      "title": "Uses simple strategy to get toy",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "9–12 months",
+      "description": "Baby figures out simple ways to retrieve an out-of-reach toy (for example, pulling a cloth to bring a toy closer).",
+      "tips": "Place a favorite toy just out of reach but on a small blanket, and let your baby discover how to pull the blanket (help a little if needed).",
+      "range": {
+        "average": "11 months",
+        "early": "9 months",
+        "late": "13 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "cg_050",
+      "title": "Imitates gestures or actions",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "9–12 months",
+      "description": "Baby copies simple actions they see others do (like clapping or waving after you do).",
+      "tips": "Demonstrate fun actions (clapping hands, blowing kisses) and praise your baby when they attempt to imitate you.",
+      "range": {
+        "average": "11 months",
+        "early": "9 months",
+        "late": "13 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "cg_051",
+      "title": "Follows simple one-step instruction",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "12–18 months",
+      "description": "Toddler can follow a simple one-step direction, especially if given with a gesture (e.g., “Give me the ball”).",
+      "tips": "Start with easy requests during play (\"Roll me the ball\") and help them complete the action, giving praise when they do.",
+      "range": {
+        "average": "15 months",
+        "early": "12 months",
+        "late": "18 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "cg_052",
+      "title": "Uses objects correctly (e.g., cup, brush)",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "12–15 months",
+      "description": "Toddler shows understanding of what common objects are for (for example, pretends to brush hair or drink from a cup).",
+      "tips": "Give your child everyday safe objects (spoon, cup, brush) during play and show them how each is used, letting them imitate.",
+      "range": {
+        "average": "14 months",
+        "early": "12 months",
+        "late": "18 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "cg_053",
+      "title": "Engages in simple pretend play",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "18–24 months",
+      "description": "Toddler uses toys or objects in pretend play (like feeding a doll or talking on a toy phone).",
+      "tips": "Play pretend with your child—have a tea party with dolls or use a toy phone to ‘talk,’ encouraging their imagination.",
+      "range": {
+        "average": "21 months",
+        "early": "18 months",
+        "late": "24 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "cg_054",
+      "title": "Matches shapes or colors",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "22–28 months",
+      "description": "Toddler can sort or match objects by shape or color (for example, putting circles in a circle hole of a shape sorter).",
+      "tips": "Play sorting games with blocks or household items by color or shape; praise attempts even if they aren't perfect.",
+      "range": {
+        "average": "24 months",
+        "early": "22 months",
+        "late": "30 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "cg_055",
+      "title": "Completes a simple puzzle",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "24–36 months",
+      "description": "Child can solve a simple puzzle (like a three-piece form board or basic inset puzzle).",
+      "tips": "Provide simple puzzles with large pieces and guide your child in finding where pieces go. Encourage them and give hints as needed.",
+      "range": {
+        "average": "30 months",
+        "early": "24 months",
+        "late": "40 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "cg_056",
+      "title": "Understands “mine” and “yours”",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "30–36 months",
+      "description": "Child understands the concept of possession, distinguishing “mine” versus “yours.”",
+      "tips": "Use words like “mine” and “yours” in context (\"This is your coat, that is Mommy’s coat\") to reinforce the idea of ownership.",
+      "range": {
+        "average": "33 months",
+        "early": "30 months",
+        "late": "40 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "cg_057",
+      "title": "Understands simple time concepts",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "34–40 months",
+      "description": "Child starts to understand basic time concepts like “later” or routines like morning vs. night.",
+      "tips": "Talk about your daily routine in order (\"After dinner we take a bath, then bedtime\") to help your child learn sequences of events.",
+      "range": {
+        "average": "36 months",
+        "early": "34 months",
+        "late": "42 months"
+      },
+      "source": "StatPearls"
+    },
+    {
+      "id": "cg_058",
+      "title": "Understands basic opposites",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "42–48 months",
+      "description": "Child knows common opposites like up/down, big/small and can sort or choose items based on those concepts.",
+      "tips": "Use everyday opportunities to talk about opposites (\"This cup is full, that one is empty\") and let your child find or demonstrate the opposite.",
+      "range": {
+        "average": "45 months",
+        "early": "42 months",
+        "late": "50 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "cg_059",
+      "title": "Counts to 10",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "48–60 months",
+      "description": "Child can count out loud up to ten (though they might skip a number or two).",
+      "tips": "Count toys, snacks, or steps together. Make counting part of playtime (\"How many blocks do you have?\").",
+      "range": {
+        "average": "54 months",
+        "early": "48 months",
+        "late": "60 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "cg_060",
+      "title": "Remembers parts of a story",
+      "domain": "Cognitive (Eagle / K'uk')",
+      "age": "48–60 months",
+      "description": "Child can recall and share some details from a familiar story or event.",
+      "tips": "After reading a story or going on an outing, ask your child to tell you what happened in their own words.",
+      "range": {
+        "average": "54 months",
+        "early": "48 months",
+        "late": "60 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "se_061",
+      "title": "Smiles spontaneously",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "1–3 months",
+      "description": "Baby begins to smile at people without needing to be stimulated.",
+      "tips": "Engage in face-to-face interaction and mirror your baby's expressions.",
+      "range": {
+        "average": "2 months",
+        "early": "1 month",
+        "late": "3 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "se_062",
+      "title": "Smiles responsively at others",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "1–2 months",
+      "description": "Baby smiles back when someone smiles or talks to them (a social smile).",
+      "tips": "Smile often at your baby and talk gently; this encourages them to connect and smile back.",
+      "range": {
+        "average": "1.5 months",
+        "early": "1 month",
+        "late": "2 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "se_063",
+      "title": "Shows excitement with familiar people",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "5–7 months",
+      "description": "Baby clearly shows excitement (smiles, waves arms) when seeing a familiar caregiver.",
+      "tips": "Respond to your baby’s excitement with warm attention and say the names of familiar people when they appear (\"Here comes Grandma!\").",
+      "range": {
+        "average": "6 months",
+        "early": "5 months",
+        "late": "8 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "se_064",
+      "title": "Shows stranger anxiety",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "6–10 months",
+      "description": "Baby may be cautious or fearful around unfamiliar people, clinging to caregivers.",
+      "tips": "Introduce new people gradually and stay near; let your baby warm up at their own pace to strangers.",
+      "range": {
+        "average": "8 months",
+        "early": "6 months",
+        "late": "10 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "se_065",
+      "title": "Plays peek-a-boo",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "8–12 months",
+      "description": "Baby participates in simple social games like peek-a-boo, indicating anticipation and joy.",
+      "tips": "Play peek-a-boo often; pause to let your baby respond or initiate the game, building their social engagement.",
+      "range": {
+        "average": "10 months",
+        "early": "8 months",
+        "late": "12 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "se_066",
+      "title": "Has a favorite toy or blanket",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "10–15 months",
+      "description": "Baby develops an attachment to a special comfort object (like a blanket or stuffed animal).",
+      "tips": "Allow your baby to have their comfort item during naps or stressful times for reassurance; it’s a normal part of self-soothing.",
+      "range": {
+        "average": "12 months",
+        "early": "10 months",
+        "late": "15 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "se_067",
+      "title": "Experiences separation anxiety",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "12–18 months",
+      "description": "Toddler may become upset when a parent leaves, showing separation anxiety.",
+      "tips": "Keep goodbyes short and calm. Establish a goodbye routine and reassure your child that you’ll be back.",
+      "range": {
+        "average": "15 months",
+        "early": "12 months",
+        "late": "18 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "se_068",
+      "title": "Imitates others during play",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "12–18 months",
+      "description": "Toddler copies behaviors they see (like pretending to talk on phone after seeing an adult do it).",
+      "tips": "Be a good role model; do fun, simple actions (like hugging a doll) and praise your child when they imitate your kind behaviors.",
+      "range": {
+        "average": "15 months",
+        "early": "12 months",
+        "late": "18 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "se_069",
+      "title": "Shows defiant behavior (says “no” often)",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "18–24 months",
+      "description": "Toddler may say “no” often or test limits as they start to assert independence.",
+      "tips": "Stay calm and consistent with rules. Offer choices when possible (\"blue shirt or red shirt?\") to give your toddler a sense of control.",
+      "range": {
+        "average": "21 months",
+        "early": "18 months",
+        "late": "30 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "se_070",
+      "title": "Plays alongside other children (parallel play)",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "24–36 months",
+      "description": "Child plays next to other children but not yet actively with them (parallel play).",
+      "tips": "Provide opportunities for playdates or playgroups; even if kids play separately, they learn from being near each other.",
+      "range": {
+        "average": "30 months",
+        "early": "24 months",
+        "late": "36 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "se_071",
+      "title": "Shows empathy (tries to comfort others)",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "24–36 months",
+      "description": "Child may attempt to comfort a crying peer or adult, showing early empathy.",
+      "tips": "Label emotions (\"Your friend is sad\") and encourage gentle actions like patting or offering a toy when someone is upset.",
+      "range": {
+        "average": "30 months",
+        "early": "24 months",
+        "late": "40 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "se_072",
+      "title": "Takes turns with help (simple social rules)",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "36–48 months",
+      "description": "Child starts to take turns and share with others when reminded, showing understanding of simple social rules.",
+      "tips": "Practice turn-taking games (rolling a ball back and forth, or sharing crayons) and praise your child for waiting their turn.",
+      "range": {
+        "average": "42 months",
+        "early": "36 months",
+        "late": "48 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "se_073",
+      "title": "Engages in imaginative group play",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "36–48 months",
+      "description": "Child engages in imaginative play with others, possibly including pretend friends or scenarios.",
+      "tips": "Join your child's pretend games and let them take the lead; ask questions about their imaginary stories to show interest.",
+      "range": {
+        "average": "48 months",
+        "early": "36 months",
+        "late": "54 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "se_074",
+      "title": "Plays cooperatively with peers",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "48–60 months",
+      "description": "Child plays with other children with a common goal or theme, cooperating in group play.",
+      "tips": "Organize simple group activities (building something together or pretending together) to encourage teamwork and sharing.",
+      "range": {
+        "average": "54 months",
+        "early": "48 months",
+        "late": "60 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "se_075",
+      "title": "Separates easily from parents (in familiar settings)",
+      "domain": "Social-Emotional (Deer / Manik')",
+      "age": "48–60 months",
+      "description": "Child is comfortable parting from parents at daycare or school, without undue distress.",
+      "tips": "Establish a consistent goodbye routine; encourage your child's independence by reassuring them you will return after school or daycare.",
+      "range": {
+        "average": "50 months",
+        "early": "48 months",
+        "late": "60 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "ad_076",
+      "title": "Brings hands to mouth",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "2–4 months",
+      "description": "Baby starts to bring hands to mouth consistently.",
+      "tips": "Keep baby's hands clean and provide safe teething toys when needed.",
+      "range": {
+        "average": "3 months",
+        "early": "2 months",
+        "late": "4 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "ad_077",
+      "title": "Opens mouth for spoon (starting solids)",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "5–7 months",
+      "description": "Baby opens their mouth when a spoon with food approaches, ready to eat solids.",
+      "tips": "Introduce solid foods slowly at around 6 months; look for baby’s cues of readiness, like opening mouth or leaning forward.",
+      "range": {
+        "average": "6 months",
+        "early": "5 months",
+        "late": "7 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "ad_078",
+      "title": "Holds bottle independently",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "6–9 months",
+      "description": "Baby can hold their own bottle during feeding (for at least a short time).",
+      "tips": "When bottle-feeding, allow baby to place hands on the bottle; use bottles they can grip easily.",
+      "range": {
+        "average": "7 months",
+        "early": "6 months",
+        "late": "9 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "ad_079",
+      "title": "Starts finger-feeding",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "8–10 months",
+      "description": "Baby picks up small pieces of food and feeds themselves using their fingers.",
+      "tips": "Offer soft finger foods (banana slices, puffs) that baby can safely pick up and chew.",
+      "range": {
+        "average": "9 months",
+        "early": "8 months",
+        "late": "11 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "ad_080",
+      "title": "Drinks from open cup with help",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "10–12 months",
+      "description": "Baby can drink from a cup held by an adult, or hold a small cup with help (some spilling).",
+      "tips": "Practice with a small plastic cup and a little water; support the cup with your hands while they try drinking.",
+      "range": {
+        "average": "11 months",
+        "early": "10 months",
+        "late": "13 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "ad_081",
+      "title": "Uses a sippy cup independently",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "12–15 months",
+      "description": "Toddler drinks from a sippy cup or straw cup without assistance.",
+      "tips": "Transition from bottle to sippy or straw cup around 12 months; demonstrate and let them practice with water to minimize mess.",
+      "range": {
+        "average": "14 months",
+        "early": "12 months",
+        "late": "16 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "ad_082",
+      "title": "Attempts to use spoon or fork",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "15–18 months",
+      "description": "Toddler tries to feed themselves with a spoon or fork, though they might spill.",
+      "tips": "Give your toddler a child-safe spoon or fork at meals; expect mess and praise their efforts to self-feed.",
+      "range": {
+        "average": "17 months",
+        "early": "15 months",
+        "late": "20 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "ad_083",
+      "title": "Helps with dressing (pushes arm through sleeve)",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "12–18 months",
+      "description": "Toddler cooperates with dressing by extending arm or leg into clothing.",
+      "tips": "Make dressing fun—encourage your child to push their arm through a sleeve or step into pants by themselves.",
+      "range": {
+        "average": "15 months",
+        "early": "12 months",
+        "late": "18 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "ad_084",
+      "title": "Removes hat, socks, or shoes",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "14–20 months",
+      "description": "Toddler can take off simple clothing items such as hat, socks, or loose shoes.",
+      "tips": "Encourage your child’s efforts to undress by giving praise. Loose-fitting clothes are easier for practice.",
+      "range": {
+        "average": "18 months",
+        "early": "14 months",
+        "late": "20 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "ad_085",
+      "title": "Shows potty training readiness",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "18–30 months",
+      "description": "Toddler shows signs of readiness for toilet training (stays dry for a couple hours, shows awareness of a dirty diaper).",
+      "tips": "Look for readiness signs like dry periods or interest in the bathroom; introduce a potty chair casually and encourage practice.",
+      "range": {
+        "average": "24 months",
+        "early": "18 months",
+        "late": "30 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "ad_086",
+      "title": "Washes hands with help",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "24–30 months",
+      "description": "Toddler can wash their hands at a sink with some help (needs assistance with soap and thorough rinsing).",
+      "tips": "Teach handwashing as a fun routine; guide your child's hands under the water and help them use soap while singing a short song.",
+      "range": {
+        "average": "26 months",
+        "early": "24 months",
+        "late": "30 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "ad_087",
+      "title": "Uses spoon with little spilling",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "24–30 months",
+      "description": "Toddler feeds themselves well with a spoon, with only occasional spills.",
+      "tips": "Provide child-sized utensils and plenty of practice. Thicker foods (like yogurt or oatmeal) are easier for toddlers to scoop.",
+      "range": {
+        "average": "28 months",
+        "early": "24 months",
+        "late": "32 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "ad_088",
+      "title": "Puts on simple clothing with help",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "24–36 months",
+      "description": "Child can put on some clothing (like a hat, shoes, or pants) with a bit of assistance.",
+      "tips": "Lay out clothing and let your child try to dress. Offer help only as needed, and choose easy clothing (loose pants, slip-on shoes).",
+      "range": {
+        "average": "30 months",
+        "early": "24 months",
+        "late": "36 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "ad_089",
+      "title": "Daytime toilet trained",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "30–36 months",
+      "description": "Child stays dry during the day and uses the potty with few accidents.",
+      "tips": "Maintain a consistent potty routine and celebrate successes. Expect occasional accidents and stay patient.",
+      "range": {
+        "average": "33 months",
+        "early": "30 months",
+        "late": "38 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "ad_090",
+      "title": "Brushes teeth with supervision",
+      "domain": "Adaptive (The Black Road / Xibalba)",
+      "age": "36–48 months",
+      "description": "Child can brush their teeth with some supervision (parents may need to finish up for thorough cleaning).",
+      "tips": "Let your child practice brushing their teeth first, then you take a turn. Use a small toothbrush and a pea-sized amount of toothpaste.",
+      "range": {
+        "average": "42 months",
+        "early": "36 months",
+        "late": "48 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "sp_091",
+      "title": "Turns head toward sounds",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "1–3 months",
+      "description": "Baby begins to turn head toward familiar sounds and voices.",
+      "tips": "Talk to your baby often and introduce gentle, varied sounds.",
+      "range": {
+        "average": "2 months",
+        "early": "1 month",
+        "late": "4 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "sp_092",
+      "title": "Startles at loud noises",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "0–2 months",
+      "description": "Newborn blinks or jumps at sudden, loud sounds.",
+      "tips": "Notice your baby's reactions to noise. Protect them from very loud sounds, but normal household noise is okay.",
+      "range": {
+        "average": "0.5 month",
+        "early": "0 month",
+        "late": "2 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "sp_093",
+      "title": "Calms with gentle rocking or soft sounds",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "0–3 months",
+      "description": "Baby can be soothed by gentle motion, soft singing, or white noise when fussy.",
+      "tips": "Rock your baby, sing lullabies, or use calming sounds (like a fan) to help soothe them when they’re upset.",
+      "range": {
+        "average": "1 month",
+        "early": "0.5 month",
+        "late": "3 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "sp_094",
+      "title": "Visually tracks moving objects",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "2–4 months",
+      "description": "Baby follows a moving object or person with their eyes from side to side.",
+      "tips": "Slowly move a colorful toy in front of your baby and encourage them to follow it with their eyes.",
+      "range": {
+        "average": "3 months",
+        "early": "2 months",
+        "late": "5 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "sp_095",
+      "title": "Enjoys various movements (bouncing, swinging)",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "4–6 months",
+      "description": "Baby shows pleasure in different movements (being gently bounced, rocked, or lifted in the air).",
+      "tips": "Try different gentle motions (swinging in your arms, infant swing, bouncing on your knee) to see what movements your baby enjoys.",
+      "range": {
+        "average": "5 months",
+        "early": "4 months",
+        "late": "7 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "sp_096",
+      "title": "Explores objects with mouth and hands",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "4–6 months",
+      "description": "Baby mouths toys and feels them with hands to learn about their texture and shape.",
+      "tips": "Offer clean, baby-safe objects of various textures for your baby to touch and chew on under supervision.",
+      "range": {
+        "average": "5 months",
+        "early": "4 months",
+        "late": "7 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "sp_097",
+      "title": "Not upset by everyday noises",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "9–12 months",
+      "description": "Baby is generally not bothered by common sounds like the vacuum cleaner, phone ringing, or doorbell.",
+      "tips": "Expose your baby to typical household noises at a moderate level; reassure them with a calm voice if they seem unsure.",
+      "range": {
+        "average": "10 months",
+        "early": "9 months",
+        "late": "14 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "sp_098",
+      "title": "Investigates toys with different textures",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "9–12 months",
+      "description": "Baby explores toys of various textures (smooth, soft, bumpy) using both hands and mouth.",
+      "tips": "Provide toys with safe different textures (cloth, rubber, plastic) to encourage sensory exploration.",
+      "range": {
+        "average": "11 months",
+        "early": "9 months",
+        "late": "13 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "sp_099",
+      "title": "Enjoys listening to songs or music",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "12–18 months",
+      "description": "Toddler shows pleasure when hearing favorite songs or music, sometimes dancing or swaying.",
+      "tips": "Play a variety of music and sing with your toddler. Encourage them to dance or clap along to engage multiple senses.",
+      "range": {
+        "average": "15 months",
+        "early": "12 months",
+        "late": "18 months"
+      },
+      "source": "Zero to Three"
+    },
+    {
+      "id": "sp_100",
+      "title": "Shows preferences for certain foods/textures",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "12–18 months",
+      "description": "Toddler may prefer certain food textures or flavors and make faces or refuse others.",
+      "tips": "Offer a variety of foods with different textures and flavors; respect dislikes but keep reintroducing occasionally in a positive way.",
+      "range": {
+        "average": "15 months",
+        "early": "12 months",
+        "late": "18 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "sp_101",
+      "title": "Observes environment from different positions",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "7–10 months",
+      "description": "Baby looks around and remains curious in various positions (lying on back or tummy, sitting, crawling).",
+      "tips": "Give baby safe space to move between positions (floor playtime) so they can explore how things look from each new vantage point.",
+      "range": {
+        "average": "8 months",
+        "early": "7 months",
+        "late": "10 months"
+      },
+      "source": "Pathways"
+    },
+    {
+      "id": "sp_102",
+      "title": "Flips switches or pushes buttons (cause and effect)",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "18–24 months",
+      "description": "Toddler likes to flip light switches or push buttons repeatedly to see the effect (lights turning on/off, toy sounds).",
+      "tips": "Provide toys with buttons or cause-and-effect activities. Allow your child to safely toggle a light switch while describing the action (\"lights on/off\").",
+      "range": {
+        "average": "21 months",
+        "early": "18 months",
+        "late": "26 months"
+      },
+      "source": "CDC"
+    },
+    {
+      "id": "sp_103",
+      "title": "Enjoys messy play with different textures",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "24–36 months",
+      "description": "Child willingly touches messy substances (sand, finger paint) during play, showing comfort with different textures.",
+      "tips": "Encourage sensory play with materials like playdough, shaving cream, or mud. Let your child get messy and praise their creativity.",
+      "range": {
+        "average": "30 months",
+        "early": "24 months",
+        "late": "36 months"
+      },
+      "source": "AAP"
+    },
+    {
+      "id": "sp_104",
+      "title": "Adjusts to loud sounds without distress",
+      "domain": "Sensory (Feathered Serpent / Kukulkan)",
+      "age": "36–48 months",
+      "description": "Child tolerates moderately loud noises (vacuum, blender) without significant fear, possibly covering ears but not panicking.",
+      "tips": "Prepare your child for loud noises (\"I’m going to vacuum now\") and make it a game to dance or sing along with the noise to make it less scary.",
+      "range": {
+        "average": "42 months",
+        "early": "36 months",
+        "late": "48 months"
+      },
+      "source": "Zero to Three"
+    }
+  ]
+}
