@@ -527,9 +527,17 @@
       document.getElementById('modal-tips').textContent = milestone.tips;
       document.getElementById('modal-source').textContent = milestone.source;
       
-      const rangeText = `Early stars: ${milestone.range.early} month${milestone.range.early !== "0.5" ? "s" : ""}
-                       \nCommon alignment: ${milestone.range.average} month${milestone.range.average !== "1" ? "s" : ""}
-                       \nLate bloomers: ${milestone.range.late} month${milestone.range.late !== "1" ? "s" : ""}`;
+      function formatMonthLabel(label) {
+        if (label.includes("month")) return label; // already includes unit
+        const value = parseFloat(label);
+        const unit = value === 1 ? "month" : "months";
+        return `${value} ${unit}`;
+      }
+    
+      const rangeText = `Early stars: ${formatMonthLabel(milestone.range.early)}
+      Common alignment: ${formatMonthLabel(milestone.range.average)}
+      Late bloomers: ${formatMonthLabel(milestone.range.late)}`;
+      
       document.getElementById('modal-range').textContent = rangeText;
       
       const completeBtn = document.getElementById('complete-btn');
